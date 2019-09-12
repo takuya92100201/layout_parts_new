@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.q10_fukidashi {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid #222;
+  border-radius: 30px;
+}
 
+.q10_fukidashi:before, .q10_fukidashi:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  content: "";
+}
+
+.q10_fukidashi:before {
+  bottom: -45px;
+  left: 30px;
+  border-top-color: #222;
+}
+
+.q10_fukidashi:after {
+  bottom: -38px;
+  left: 30px;
+  border-top-color: #fff;
+}
 /* 回答はここに書いてね */
