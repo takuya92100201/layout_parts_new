@@ -5,6 +5,7 @@
 display: inline-block;
 text-align: center;
 margin-left: 10px;
+cursor: pointer;
 }
 
 .q8__btn:first-of-type {
@@ -19,24 +20,24 @@ margin-left: 10px;
 
 .q8__btn--common {
   background-color: #00bcd4;
-  color: #fff
+  color: #fff;
 }
 
 .q8__btn--error {
   background-color: #ff4081;
-  color: #fff
+  color: #fff;
 }
 
 .q8__btn--disabled {
   background-color: #e5e5e5;
-  color: #fff
+  color: #fff;
+  cursor: default;
 }
 
 .q8__btn--shadow {
   background-color: #fff;
   color: #222;
   box-shadow: 0 1px 6px rgba(0, 0, 0, .12), 0 1px 4px rgba(0, 0, 0, .12);
-  
 }
 
 .q8__btn--middle {
@@ -52,6 +53,8 @@ margin-left: 10px;
   line-height: 38px;
   padding: 0 25px;
 }
+
+
 
 
 /* フォーム */

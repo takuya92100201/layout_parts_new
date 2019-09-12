@@ -8,7 +8,7 @@
 }
 
 /*　フロート */
-.q7--float .q7__inner .q7__box {
+.q7--float .q7__wrapper .q7__content {
   font-size: 16px;
   margin-left: 50px;
   box-sizing: border-box;
@@ -16,34 +16,34 @@
   float: left;
 }
 
-.q7--float .q7__inner .q7__box:first-child {
+.q7--float .q7__wrapper .q7__content:first-child {
   margin-left: 0;
 }
 
 
 /* テーブル */
-.q7--table .q7__inner {
+.q7--table .q7__wrapper {
   display: table;
 }
 
-.q7--table .q7__inner .q7__box {
+.q7--table .q7__wrapper .q7__content {
   display: table-cell;
   padding-left: 50px;
   width: 225px;
   vertical-align: middle;
 }
 
-.q7--table .q7__inner .q7__box:first-child {
+.q7--table .q7__wrapper .q7__content:first-child {
   padding-left: 0;
 }
 
 
 /* インラインブロック */
-.q7--inlineblock .q7__inner {
+.q7--inlineblock .q7__wrapper {
   font-size: 0;
 }
 
-.q7--inlineblock .q7__inner .q7__box {
+.q7--inlineblock .q7__wrapper .q7__content {
   display: inline-block;
   vertical-align: middle;
   width: 225px;
@@ -52,19 +52,19 @@
   font-size: 16px;
 }
 
-.q7--inlineblock .q7__inner .q7__box:first-child {
+.q7--inlineblock .q7__wrapper .q7__content:first-child {
   margin-left: 0;
 }
 
 
 /* フレックス */
-.q7--flex .q7__inner {
+.q7--flex .q7__wrapper {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
 
-.q7--flex .q7__inner .q7__box {
+.q7--flex .q7__wrapper .q7__content {
   width: 225px;
   vertical-align: middle;
   box-sizing: border-box;
@@ -73,30 +73,29 @@
 
 
 /* インラインボックスとマージン */
-.q7--margin .q7__inner {
+.q7--margin .q7__wrapper {
   font-size: 0;
 }
 
-.q7--margin .q7__inner .q7__box {
+.q7--margin .is_right {
   display: inline-block;
-  font-size: 16px;
   margin-left: -300px;
   padding-left: 350px;
   box-sizing: border-box;
-  vertical-align: top;
+  width: 100%;
 }
 
-.q7--margin .q7__inner .q7__box:first-child {
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-.is_left {
+.q7--margin .is_left {
+  display: inline-block;
   width: 300px;
 }
 
-.is_right {
-  width: 100%;
+.q7__box__text {
+  font-size: 16px;
+}
+
+.q7__content {
+  vertical-align: top;
 }
 
 
