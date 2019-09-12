@@ -78,19 +78,21 @@
 }
 
 .q7--margin .is_right {
-  display: inline-block;
   margin-left: -300px;
   padding-left: 350px;
   box-sizing: border-box;
   width: 100%;
 }
 
-.q7--margin .is_left {
+.q7__content {
   display: inline-block;
+}
+
+.q7--margin .is_left {
   width: 300px;
 }
 
-.q7__box__text {
+.q7--margin .q7__text{
   font-size: 16px;
 }
 
